@@ -1,0 +1,144 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(41, 41, 41, 1.0);
+    background-image: url('./../image//6.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.cantainer{
+	background-color:#090f17;
+	backdrop-filter: blur(50px)
+	position: relative;
+	width: 400px;
+	color: white;
+	padding: 20px;
+	margin: 50px auto 0;
+	border: 3px solid #780678;
+	box-shadow: 3.5px  3.5px   #780678;
+	border-radius: 20px;
+	transition: height .6s ease;
+	text-align: center
+
+	/*
+	background: linear-gradient(130deg, darkred , darkblue);
+	*/
+
+}
+
+.search{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+     
+}
+
+.search input{
+	border:0;
+	outline :0;
+	padding: 10px  22px;
+	flex: 1;
+	margin-right: 20px;
+	border-radius: 20px;
+	font-size: 18px;
+	background-color: lightcyan;
+	color: black;
+
+}
+
+.search button{
+	border: 0;
+	outline: 0;
+	background-color: lightcyan;
+    width:40px ;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.search img{
+	width: 20px;
+}
+
+.Weather .icon{
+	margin-top: 20px;
+	width: 170px;
+}
+
+.Weather h1{
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.Weather h2{
+	font-size: 40px;
+	font-weight: 400;
+	margin-top: -10px;
+}
+
+.detail{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 20px;
+	margin-top: 50px;
+}
+
+.col{
+	display: flex;
+	align-items: center;
+	text-align: left;
+
+}
+
+.col img{
+	width: 40px;
+	margin-right: 10px;
+	color: white;
+}
+
+.humidity .wind{
+	font-size: 20px;
+
+}
+
+.error{
+	text-align: left;
+	color: red;
+	margin-top: 5px;
+	margin-left: 5px;
+	display: none;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .search {
+        position: relative;
+    }
+
+    .search input {
+        padding-right: 40px;  
+    }
+
+    .search button {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35px;  
+        height: 35px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
